@@ -18,11 +18,19 @@
   },
   "content_scripts": [
     {
-      "matches": ["file:///*"],
+      "matches": ["file:///*", "https://*", "http://*"],
       "css": ["css/style.css"],
       "js": ["js/barcord.js"],
       "run_at": "document_end"
     }
   ],
-  "permissions": ["tabs", "storage", "file:///*", "downloads", "contextMenus"]
+  "permissions": [
+    "tabs",
+    "storage",
+    "file:///*",
+    "https://*",
+    "http://*",
+    "downloads",
+    "contextMenus"
+  ]
 }
