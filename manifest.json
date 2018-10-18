@@ -18,18 +18,16 @@
   },
   "content_scripts": [
     {
-      "matches": ["file:///*", "https://*", "http://*"],
-      "css": ["css/style.css"],
-      "js": ["js/barcord.js"],
-      "run_at": "document_end"
-    }
-  ],
+    "matches": ["file:///C:/Users/admin/Desktop/test/extention/html/options.html"],
+    "css": ["css/style.css"],
+    "js": ["js/barcord.js"],
+    "run_at": "document_end"
+  }
+],
   "permissions": [
     "tabs",
     "storage",
-    "file:///*",
-    "https://*",
-    "http://*",
+    "file:///C:/Users/admin/Desktop/test/extention/html/options.html",
     "downloads",
     "contextMenus"
   ]

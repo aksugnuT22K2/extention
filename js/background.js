@@ -1,4 +1,4 @@
-chrome.contextMenus.create({
+/* chrome.contextMenus.create({
   title: 'barcord',
   id: 'barcord',
   contexts: ['page'],
@@ -13,4 +13,4 @@ chrome.browserAction.onClicked.addListener(function(tab) {
 });
 function smAction(tab) {
   chrome.tabs.sendMessage(tab.id, 'Action');
-}
+} */

@@ -1,14 +1,20 @@
 .barcode {
+  font-family: 'Libre Barcode 39 Text';
   background: red;
   position: absolute;
   top: 0;
   right: 0;
-  transform: translate(160%, 100%) rotate(90deg);
-  transform-origin: 0 0;
-  font-family: 'Libre Barcode 39 Text';
-  /* <link href="https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text" rel="stylesheet"> */
+  font-size: 4rem;
+  transform-origin: bottom left;
+  transform: translate(100%, -4rem) rotate(90deg);
+}
+.barcode p {
+  margin: 0;
+  padding: 0;
 }
 
 #PrintBase {
   position: relative;
+  width: 700px;
+  height: 170px;
 }
