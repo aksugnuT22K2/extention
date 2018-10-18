@@ -18,10 +18,21 @@
   },
   "content_scripts": [
     {
-      "matches": ["<all_urls>"],
+      "matches": [
+        "https://www.orangekoubou.com/web-order/manager/mg-ordersheet-chain.php*",
+        "file:///*"
+      ],
       "css": ["css/style.css"],
-      "js": ["js/barcord.js"]
+      "js": ["js/barcord.js"],
+      "run_at": "document_end"
     }
   ],
-  "permissions": ["tabs", "storage", "<all_urls>", "downloads", "contextMenus"]
+  "permissions": [
+    "tabs",
+    "storage",
+    "https://www.orangekoubou.com/web-order/manager/mg-ordersheet-chain.php*",
+    "file:///*",
+    "downloads",
+    "contextMenus"
+  ]
 }
